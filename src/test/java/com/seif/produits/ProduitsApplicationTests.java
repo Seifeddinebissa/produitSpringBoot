@@ -96,7 +96,7 @@ class ProduitsApplicationTests {
 	@Test
 	public void testfindByCategorie() {
 		Categorie cat = new Categorie();
-		cat.setIdCat(2L);
+		cat.setIdCat(1L);
 		List<Produit> prods = produitRepository.findByCategorie(cat);
 		for (Produit p : prods) {
 			System.out.println(p);
